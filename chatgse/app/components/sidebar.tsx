@@ -9,6 +9,7 @@ import ReadTheDocsIcon from "../icons/read-the-docs.svg";
 // import ChatGptIcon from "../icons/chatgpt.svg";
 import BioChatterIcon from "../icons/biochatter.svg";
 import AddIcon from "../icons/add.svg";
+import KnowledgeGraphIcon from "../icons/knowledge-graph.svg";
 import AboutIcon from "../icons/about.svg";
 import CloseIcon from "../icons/close.svg";
 import DeleteIcon from "../icons/delete.svg";
@@ -20,6 +21,7 @@ import Locale from "../locales";
 
 import { useAppConfig, useChatStore } from "../store";
 
+
 import {
   DEFAULT_SIDEBAR_WIDTH,
   MAX_SIDEBAR_WIDTH,
@@ -27,7 +29,8 @@ import {
   NARROW_SIDEBAR_WIDTH,
   Path,
   REPO_URL,
-  DOCS_URL
+  DOCS_URL,
+  ChatType
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -250,8 +253,9 @@ export function SideBar(props: { className?: string }) {
             </a>
           </div>
         </div>
-        <div>
+        <div className={styles["sidebar-actions"]}>
           <IconButton
+            className={styles["sidebar-action"]}
             icon={<AddIcon />}
             text={shouldNarrow ? undefined : Locale.Home.NewChat}
             onClick={() => {
@@ -261,6 +265,16 @@ export function SideBar(props: { className?: string }) {
               } else {
                 navigate(Path.NewChat);
               }
+            }}
+            shadow
+          />
+          <IconButton
+            className={styles["sidebar-action"]}
+            icon={<KnowledgeGraphIcon />}
+            text={shouldNarrow ? undefined : Locale.Home.NewKGChat}
+            onClick={() => {
+              chatStore.newSession(undefined, ChatType.KnowledgeGraphChat);
+              navigate(Path.KnowledgeGraphChat);
             }}
             shadow
           />

@@ -120,6 +120,7 @@ const cn = {
   },
   Home: {
     NewChat: "新的聊天",
+    NewKGChat: "新的聊天",
     DeleteChat: "确认删除选中的对话？",
     DeleteToast: "已删除会话",
     Revert: "撤销",
@@ -342,7 +343,9 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
+    DefaultKnowledgeGraphTopic: "New Knowledge Graph Conversation",
     BotHello: "有什么可以帮你的吗",
+    BotKGHello: "Hello! I am the model's assistant. This is the Knowledge Graph conversation room. To get started, could you please tell me your name?",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
@@ -387,6 +390,15 @@ const cn = {
       ],
       Heading2: "关于型号",
       Models: "加载的默认模型是 OpenAIs gpt-3.5-turbo 模型，在标准版本中，每个会话的令牌限制为 4000。 该模型目前有两个版本：0301 和 0613。后者是更新的版本，改进了系统消息的解释和处理函数的功能（以 JSON 形式返回给定函数的属性值）。 此外，OpenAI 还提供了 gpt-3.5-turbo-16k 模型，每个对话的代币限制增加到 16000 个。 该模型稍微昂贵，但对于较长的对话非常有用，特别是在包含文档摘要/提示注入功能时"
+    }
+  },
+  KnowledgeGraph: {
+    Config: {
+      Url: "URL",
+      ConnectionStatus: "Connection status",
+      Disconnected: "Disconnected",
+      Connected: "Connected",
+      Connect: "Connect/Reconnect",
     }
   },
   Mask: {

@@ -123,6 +123,7 @@ const en: LocaleType = {
   },
   Home: {
     NewChat: "New Chat",
+    NewKGChat: "New KG Chat",
     DeleteChat: "Confirm to delete the selected conversation?",
     DeleteToast: "Chat Deleted",
     Revert: "Revert",
@@ -347,7 +348,9 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
+    DefaultKnowledgeGraphTopic: "New Knowledge Graph Conversation",
     BotHello: "Hello! How can I assist you today?",
+    BotKGHello: "Hello! I am the model's assistant. This is the Knowledge Graph conversation room. To get started, could you please tell me your name?",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
@@ -393,6 +396,15 @@ const en: LocaleType = {
       ],
       Heading2: "About the models",
       Models: "The default model loaded is OpenAIs gpt-3.5-turbo model, which in the standard version has a token limit of 4000 per conversation. This model currently comes in two versions, 0301 and 0613. The latter is the more recent one with improved interpretation of system messages and capabilities to handle functions (returning attribute values of a given function as JSON). Additionally, OpenAI provide a gpt-3.5-turbo-16k model with increased token limit of 16000 per conversation. This model is slightly more expensive, but can be useful for longer conversations, particularly when including the document summarisation / prompt injection feature."
+    }
+  },
+  KnowledgeGraph: {
+    Config: {
+      Url: "URL",
+      ConnectionStatus: "Connection status",
+      Connect: "Connect/Reconnect",
+      Disconnected: "Disconnected",
+      Connected: "Connected",
     }
   },
   Mask: {

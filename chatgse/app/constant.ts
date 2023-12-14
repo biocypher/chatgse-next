@@ -17,6 +17,7 @@ export const OPENAI_BASE_URL = "https://api.openai.com";
 export enum Path {
   Home = "/",
   Chat = "/chat",
+  KnowledgeGraphChat = "/knowledge-graph-chat",
   Settings = "/settings",
   NewChat = "/new-chat",
   About = "/about",
@@ -47,6 +48,11 @@ export enum StoreKey {
   Prompt = "prompt-store",
   Update = "chat-update",
   Sync = "sync",
+}
+
+export enum ChatType {
+  RegularChat = "regular-chat",
+  KnowledgeGraphChat = "knowledge-graph-chat",
 }
 
 export const DEFAULT_SIDEBAR_WIDTH = 300;
