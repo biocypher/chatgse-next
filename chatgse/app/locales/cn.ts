@@ -79,6 +79,41 @@ const cn = {
       SaveAs: "存为面具",
     },
     IsContext: "预设提示词",
+    RAG: {
+      Description: "",
+      OK: "",
+      Reset: "",
+      Documents: {
+        Label: "",
+        DocumentsHints: "",
+        DocumentsPrompts: "",
+        UploadingMessage: "",
+      },
+      Settings: {
+        Label: "",
+        ConnectionStatus: "",
+        Refresh: "",
+        Reconnect: "",
+        DatabaseURL: "",
+        DatabasePort: "",
+        DatabaseUser: "",
+        DatabasePassword: "",
+        UseRAG: "",
+        SplitByChar: "",
+        ChunkSize: {
+          Label: "",
+          subLabel: ""
+        },
+        Overlap: {
+          Label: "",
+          subLabel: "",
+        },
+        ResultsNum: {
+          Label: "",
+          subLabel: "",
+        }
+      }
+    },
   },
   Export: {
     Title: "分享聊天记录",
@@ -491,6 +526,17 @@ const cn = {
     Import: "导入",
     Sync: "同步",
     Config: "配置",
+    DorpZone: {
+      FileWarning: "",
+      UploadPrompts: "",
+      UploadHints: "",
+      BrowseButton: {
+        Label: "",
+      },
+      UploadButton: {
+        Label: ""
+      }
+    }
   },
   Exporter: {
     Description: {
